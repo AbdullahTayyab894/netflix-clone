@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from "react";
+import Cards from './component/card'
+import Card1 from './component/card1'
+import Card2 from './component/card2'
+import Card3 from './component/card3'
+import Navbar from './component/Navbar.js'
+import Faq from './component/faq';
+import Footer from './component/footer';
+import Partical from './component/partical'
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Cards />
+      <Card1 />
+      <Card2 />
+      <Card3 />
+      <Faq />
+      <Footer />
     </div>
+
   );
 }
 
